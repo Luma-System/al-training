@@ -1,11 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LM Multi-Site Launcher</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
+
+      body {
+        font-family: "Kantumruy Pro", sans-serif;
+      }
+    </style>
+
     <script>
-      window.onload = function () {
+      function openSites() {
         const urls = [
           "https://go.gov.kh/mlmupc/training-cis-entry",
           "https://go.gov.kh/mlmupc/training-cis-profile",
@@ -13,15 +22,17 @@
         ];
 
         urls.forEach((url) => window.open(url, "_blank"));
-
-        // Attempt to close this page
-        setTimeout(() => {
-          window.close();
-        }, 1000); // Delay to ensure tabs open first
+      }
+      window.onload = function () {
+        openSites();
       };
     </script>
   </head>
+
   <body>
-    <p>Launching sites...</p>
+    <span>
+      ប្រសិនបើអ្នកមិនត្រូវបានបញ្ជូនបន្តទេ
+      <a href="#" onclick="openSites()">សូមចុចទីនេះ</a>
+    </span>
   </body>
 </html>
