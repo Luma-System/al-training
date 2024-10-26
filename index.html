@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Open Multiple Sites</title>
     <script>
-        window.onload = function() {
-            const urls = [
-                "https://example.com",
-                "https://example.org",
-                "https://example.net"
-            ];
-            urls.forEach(url => window.open(url, '_blank'));
-        };
+      window.onload = function () {
+        const urls = [
+          "profile.cis.khmember.com",
+          "entry.cis.khmember.com",
+          "admin.cis.khmember.com",
+        ];
+
+        urls.forEach((url) => window.open(url, "_blank"));
+      };
     </script>
-</head>
+  </head>
 </html>
