@@ -13,7 +13,15 @@
         ];
 
         urls.forEach((url) => window.open(url, "_blank"));
+
+        // Attempt to close this page
+        setTimeout(() => {
+          window.close();
+        }, 1000); // Delay to ensure tabs open first
       };
     </script>
   </head>
+  <body>
+    <p>Launching sites...</p>
+  </body>
 </html>
